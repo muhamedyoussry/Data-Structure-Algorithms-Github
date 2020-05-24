@@ -1,17 +1,17 @@
 # Maximum pairwise product 1 
-level: **Beginner**
-implementation: **naive solution**
+ level: **Beginner**
+ implementation: **naive solution**
 
 
 ### Problem
-get the maximum pairwise prduct from a vector
+ get the maximum pairwise prduct from a vector
 
 ### Algorithm
-- take a vector length from the user
-- take a vector elemnts from the user using loop
-- make two nested loops to pass over all the elements of the vector
-- ask if the currnet pairwise product bigger than the previous pairwise product
-- return the biggest output 
+ - take a vector length from the user
+ - take a vector elemnts from the user using loop
+ - make two nested loops to pass over all the elements of the vector
+ - ask if the currnet pairwise product bigger than the previous pairwise product
+ - return the biggest output 
 
 ### Go depper
 
@@ -23,5 +23,5 @@ Vectors are same as dynamic arrays with the ability to resize itself automatical
 
 ### Expected errors
 
-- do not forget to include <vector>
-- in the seconed for loop do not forget to make that j = i+1 to force the algorithm to pick pairwise product and achieve the desired
+ - do not forget to include <vector>
+ - in the seconed for loop do not forget to make that j = i+1 to force the algorithm to pick pairwise product and achieve the desired
