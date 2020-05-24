@@ -21,7 +21,7 @@ Vectors are same as dynamic arrays with the ability to resize itself automatical
 #### Time Complexity (Big-O) ?
  n^2 
 
-### Expected errors
+#### Expected errors
 
  - do not forget to include <vector>
  - in the seconed for loop do not forget to make that j = i+1 to force the algorithm to pick pairwise product and achieve the desired
