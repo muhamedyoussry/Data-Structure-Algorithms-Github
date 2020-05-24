@@ -1,6 +1,6 @@
 # Maximum pairwise product 1 
- level: **Beginner**
- implementation: **naive solution**
+* level: **Beginner**
+* implementation: **naive solution**
 
 
 ### Problem
