@@ -24,7 +24,7 @@ Vectors are same as dynamic arrays with the ability to resize itself automatical
 To be able to deal with the large numbers that the user will enter 
 
 #### Time Complexity (Big-O) ?
-$$ n^{2} $$ 
+n^{2} 
 
 #### Expected errors
 
