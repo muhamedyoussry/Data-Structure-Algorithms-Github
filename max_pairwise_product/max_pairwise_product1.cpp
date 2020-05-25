@@ -7,7 +7,7 @@ long long MaxPairwiseProduct(vector<int> x, int length);
 long long MaxPairwiseProductFast(vector<int> x, int length);
 
 int main()
-{
+{   
     int len = 0;
     cout << "Enter the vector length: ";
     cin >> len;
@@ -45,15 +45,15 @@ long long MaxPairwiseProductFast(vector<int> x, int length)
     {
         if (x[i] > x[maxIndex1])
         {
-            maxIndex1 = i ; 
+            maxIndex1 = i;
         }
     }
     for (int i = 0; i < length; i++)
     {
-        if (x[i] > x[maxIndex2] && i != maxIndex1 )
+        if (x[i] > x[maxIndex2] && i != maxIndex1)
         {
-            maxIndex2 = i ; 
+            maxIndex2 = i;
         }
     }
-    return ( x[maxIndex1] *  x[maxIndex2] ) ;
+    return (x[maxIndex1] * x[maxIndex2]);
 }
