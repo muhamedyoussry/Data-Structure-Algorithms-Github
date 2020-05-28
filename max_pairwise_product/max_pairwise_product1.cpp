@@ -74,10 +74,10 @@ long long MaxPairwiseProduct(vector<int> x, int length)
 long long MaxPairwiseProductFast(vector<int> x, int length)
 {
     int maxIndex1 = 0;
-    int maxIndex2 = length;
+    int maxIndex2 = length-1;
     for (int i = 0; i < length; i++)
     {
-        if (x[i] > x[maxIndex1])
+        if (x[i] > x[maxIndex1]  && i != maxIndex2)
         {
             maxIndex1 = i;
         }
