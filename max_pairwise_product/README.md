@@ -50,3 +50,8 @@ Enhance the algorithm time complexity to  n+n instead of n-square
 
 #### Time Complexity (Big-O) ?
  n+n
+
+ #### Expected errors
+
+ - make sure that you start your variable initializatin with the right numbers; change them and see explore what happen 
+   - maxIndex1 = 0 , maxIndex2 = lengthOfVector - 1
