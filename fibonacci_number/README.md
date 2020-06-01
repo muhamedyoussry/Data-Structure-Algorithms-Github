@@ -4,6 +4,7 @@
 
 * level: **Beginner**
 * implementation: **naive solution**
+* idea : **recursive function** 
 
 ### Problem
  get the fibonacci function result
@@ -21,10 +22,11 @@ A recursive function is a function that calls itself during its execution. This 
 
 
 
-## Function 1: fastFibonacci
+## Function 2: fastFibonacci
 
 * level: **Beginner**
-* implementation: **naive solution**
+* implementation: **faster solution**
+* idea : **using arrays** 
 
 ### Problem
  get the fibonacci function result faster

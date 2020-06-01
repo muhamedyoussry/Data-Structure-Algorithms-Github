@@ -4,6 +4,7 @@
 
 * level: **Beginner**
 * implementation: **naive solution**
+* idea : **two nested for loops** 
 
 ### Problem
  get the maximum pairwise prduct from a vector
@@ -35,7 +36,8 @@ n^{2}
 ## Function 2: MaxPairwiseProductFast
 
 * level: **Beginner**
-* implementation: **enhanced naive solution**
+* implementation: **enhanced solution**
+* idea : **two seperate for loops** 
 
 ### objective
 Enhance the algorithm time complexity to  n+n instead of n-square
