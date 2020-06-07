@@ -7,6 +7,7 @@ Data Structures and Algorithms Specialization Programming Assignments by Univers
 
 - **A plus B**
     - level: Beginner
+
 - **max_pairwise_product**
     - level: Beginner
     - implementation: naive solution & enhanced solution
@@ -14,5 +15,8 @@ Data Structures and Algorithms Specialization Programming Assignments by Univers
 ## Programming Assignment 2
 
 - **fibonacci_number**
+    - level: Beginner
+    - implementation: naive solution & faster solution
+- **greatest_common_divisor**
     - level: Beginner
     - implementation: naive solution & faster solution
