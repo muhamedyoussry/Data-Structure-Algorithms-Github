@@ -9,3 +9,5 @@
   - make a function named **sum_of_two_digits** to return the summation
     - return A+B
   - show the reuslt to the user
+  
+Test 7/1/2021
