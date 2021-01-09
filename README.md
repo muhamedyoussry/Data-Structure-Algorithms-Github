@@ -5,18 +5,18 @@ Data Structures and Algorithms Specialization Programming Assignments by Univers
 
 ## Programming Assignment 1
 
-- **A plus B**
+- [**A plus B**](https://github.com/muhamedyoussry/Data-Structure-Algorithms-Github/tree/master/Programming%20Assignment%201/AplusB)
     - level: Beginner
 
-- **max_pairwise_product**
+- [**max_pairwise_product**](https://github.com/muhamedyoussry/Data-Structure-Algorithms-Github/tree/master/Programming%20Assignment%201/max_pairwise_product)
     - level: Beginner
     - implementation: naive solution & enhanced solution
 
 ## Programming Assignment 2
 
-- **fibonacci_number**
+- [**fibonacci_number**](https://github.com/muhamedyoussry/Data-Structure-Algorithms-Github/tree/master/Programming%20Assignment%202/fibonacci_number)
     - level: Beginner
     - implementation: naive solution & faster solution
-- **greatest_common_divisor**
+- [**greatest_common_divisor**](https://github.com/muhamedyoussry/Data-Structure-Algorithms-Github/tree/master/Programming%20Assignment%202/greatest_common_divisor)
     - level: Beginner
     - implementation: naive solution & faster solution
