@@ -42,8 +42,9 @@ A recursive function is a function that calls itself during its execution. This 
  ### Go depper
 
 #### why using unsigned long long ? 
-To be able to store highly long and big integer positiver number 
+To be able to store highly long and big integer positive number
 
 | Data type | Size | Range |
 |:---------------:| :---------: | :---------: |
-| unsigned long long | 8 bytes | 0 to +8,446,744,073,709,551,615 |
+| unsigned long long | 8 bytes | 0 to + 18,446,744,073,709,551,615 |
+| long long | 8 bytes | -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 |
