@@ -13,7 +13,7 @@ int main()
     cin >> n;
 
     cout << fastFibonacci(n) << endl;
-    cout << naiveFibonacci(n) << endl;
+    // cout << naiveFibonacci(n) << endl;
 }
 
 unsigned long long naiveFibonacci(int n)
