@@ -33,11 +33,12 @@ int main()
   // }
 
   long a, b = 0;
-  cout << "Enter the two numbers: ";
+  //cout << "Enter the two numbers: ";
   cin >> a >> b;
 
-  cout << "GCD = " << naiveGCD(a, b) << endl;
-  cout << "GCD = " << fasterGCD(a, b) << endl;
+  //cout << "GCD = " << naiveGCD(a, b) << endl;
+  //cout << "GCD = " << fasterGCD(a, b) << endl;
+  cout << fasterGCD(a, b) << endl;
 }
 
 long naiveGCD(long a, long b)
