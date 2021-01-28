@@ -11,26 +11,6 @@ long maxTwoNumebrs(int a, int b);
 
 int main()
 {
-  // srand(time(0));
-  // while (true)
-  // {
-  //   long a = rand() % 1000000 + 2;
-  //   long b = rand() % 1000000 + 2;
-  //   cout << a << " " << b << endl;
-  //   // to generate two random numbers fom 1 to 1000
-  //   long naive = naiveGCD(a, b);
-  //   long faster = fasterGCD(a, b);
-  //   if (naive != faster)
-  //   {
-  //     cout << "Wrong answer "
-  //          << "naive = " << naive << "... fast = " << faster << endl;
-  //     break;
-  //   }
-  //   else
-  //   {
-  //     cout << faster << "  OK " << endl;
-  //   }
-  // }
 
   long a, b = 0;
   //cout << "Enter the two numbers: ";
@@ -63,6 +43,7 @@ long fasterGCD(long a, long b)
   if (prime == 0)
   {
     GCD = min;
+    return GCD ; 
   }
   else
   {
