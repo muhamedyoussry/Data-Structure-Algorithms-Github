@@ -7,7 +7,7 @@
 * idea : **two nested for loops** 
 
 >### Problem
- get the maximum pairwise prduct from a vector
+get the maximum pairwise prduct from a vector
 
 >### Algorithm
  - take a vector length from the user
