@@ -18,6 +18,9 @@ Data Structures and Algorithms Specialization Programming Assignments by Univers
 - [**fibonacci_number**](https://github.com/muhamedyoussry/Data-Structure-Algorithms-Github/tree/master/Programming%20Assignment%202/1_fibonacci_number)
     - level: Beginner
     - implementation: naive solution & faster solution
+- [**last_digit_of_fibonacci_number**](https://github.com/muhamedyoussry/Data-Structure-Algorithms-Github/tree/master/Programming%20Assignment%202/2_last_digit_of_fibonacci_number)
+    - level: Beginner
+    - implementation: faster solution
 - [**greatest_common_divisor**](https://github.com/muhamedyoussry/Data-Structure-Algorithms-Github/tree/master/Programming%20Assignment%202/3_greatest_common_divisor)
     - level: Beginner
     - implementation: naive solution & faster solution
