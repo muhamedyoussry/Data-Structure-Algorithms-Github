@@ -17,7 +17,7 @@
 
 >### Go depper
 
-    #### what is recursive function ? 
+    - what is recursive function ? 
     A recursive function is a function that calls itself during its execution. This enables the function to repeat itself several times, outputting the result and the end of each iteration.
 
 
@@ -41,7 +41,7 @@
 
 >### Go depper
 
-    why using unsigned long long ? 
+    - why using unsigned long long ? 
     To be able to store highly long and big integer positive number
 
 | Data type | Size | Range |
