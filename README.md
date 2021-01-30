@@ -24,4 +24,8 @@ Data Structures and Algorithms Specialization Programming Assignments by Univers
 - [**greatest_common_divisor**](https://github.com/muhamedyoussry/Data-Structure-Algorithms-Github/tree/master/Programming%20Assignment%202/3_greatest_common_divisor)
     - level: Beginner
     - implementation: naive solution & faster solution
+
+- [**least_common_multiple**](https://github.com/muhamedyoussry/Data-Structure-Algorithms-Github/tree/master/Programming%20Assignment%202/4_least_common_multiple)
+    - level: Beginner
+    - implementation: naive solution & faster solution
 ---
