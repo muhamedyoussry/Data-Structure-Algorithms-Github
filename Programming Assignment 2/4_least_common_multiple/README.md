@@ -23,7 +23,7 @@ integer 𝑚 that is divisible by both 𝑎 and 𝑏.
 
 * level: **Beginner**
 * implementation: **faster solution**
-* idea : **using loop but with bigger steps** 
+* idea : **using loop but with the step equal to the maximum number from a and b**
 
 >### Problem
      Given two integers 𝑎 and 𝑏, find their least common multiple in a faster enhanced algorithm.
