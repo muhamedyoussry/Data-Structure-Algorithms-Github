@@ -29,7 +29,7 @@ Data Structures and Algorithms Specialization Programming Assignments by Univers
     - level: Beginner
     - implementation: naive solution & faster solution
 
-- [**fibonacii_number_again**](https://github.com/muhamedyoussry/Data-Structure-Algorithms-Github/tree/master/Programming%20Assignment%202/4_least_common_multiple)
+- [**fibonacii_number_again**](https://github.com/muhamedyoussry/Data-Structure-Algorithms-Github/tree/master/Programming%20Assignment%202/5_fibonacci_number_again)
     - level: intermediate
     - implementation: faster solution for huge numbers
 ---

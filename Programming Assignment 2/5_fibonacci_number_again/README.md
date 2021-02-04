@@ -27,7 +27,8 @@ avoid such a loop.
 >### Go depper
 
     - what is pisano period  ? 
-    To get an idea how to solve this problem without going through all 𝐹𝑖 for 𝑖 from 0 to 𝑛, let’s see what happens when 𝑚 is small — say, 𝑚 = 2 or 𝑚 = 3.
+    To get an idea how to solve this problem without going through all 𝐹𝑖 for 𝑖 from 0 to 𝑛,
+    let’s see what happens when 𝑚 is small — say, 𝑚 = 2 or 𝑚 = 3.
 
 |    i     |   0   |   1   |   2   |   3   |   4   |   5   |   6   |   7   |   8   |   9   |  10   |  11   |  12   |  13   |  14   |  15   |
 | :------: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -40,7 +41,7 @@ avoid such a loop.
     is 011 and has length 3, while for 𝑚 = 3 the period is 01120221 and has length 8. Therefore, to compute,
     say, 𝐹2015 mod 3 we just need to find the remainder of 2015 when divided by 8. Since 2015 = 251 · 8 + 7, we
     conclude that 𝐹2015 mod 3 = 𝐹7 mod 3 = 1.
-    
+
     This is true in general: for any integer 𝑚 ≥ 2, the sequence 𝐹𝑛 mod 𝑚 is periodic. The period always
     starts with 01 and is known as Pisano period.
 ---
