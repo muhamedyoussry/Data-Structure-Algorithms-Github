@@ -33,7 +33,7 @@ Data Structures and Algorithms Specialization Programming Assignments by Univers
     - level: intermediate
     - implementation: faster solution for huge numbers using pisano period
 
-- [**last_digit_of_the_sum_of_fibonacci_numbers**](https://github.com/muhamedyoussry/Data-Structure-Algorithms-Github/tree/master/Programming%20Assignment%202/5_fibonacci_number_again)
+- [**last_digit_of_the_sum_of_fibonacci_numbers**](https://github.com/muhamedyoussry/Data-Structure-Algorithms-Github/tree/master/Programming%20Assignment%202/6_last_digit_of_the_sum_of_fibonacci_numbers)
     - level: intermediate
     - implementation: faster solution for huge numbers using pisano period
 ---
