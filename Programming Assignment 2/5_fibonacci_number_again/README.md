@@ -1,9 +1,9 @@
 # _**Fibonacci Numbers again**_
 
-## **Function 2: get_fibonacci_huge_faster**
+## **Function 1: get_fibonacci_huge_faster**
 
 * level: **Intermediate**
-* implementation: **faster solutionfor huge numebs**
+* implementation: **faster solution for huge numbers**
 * idea : **using pisano period** 
 
 >### Problem

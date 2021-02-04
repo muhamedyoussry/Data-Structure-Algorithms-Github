@@ -1,47 +1,61 @@
 #include <iostream>
 using namespace std;
 
-int fibonacci_sum_naive(unsigned long long n)
+int get_pisano_period(int n)
 {
-    if (n <= 1)
-        return n;
-
-    unsigned long long previous = 0;
-    unsigned long long current = 1;
-    unsigned long long sum = 1;
-
-    for (unsigned long long i = 0; i < n - 1; ++i)
+    long long a = 0;
+    long long b = 1;
+    long long c = a + b;
+    for (int i = 0; i < 100; i++)
     {
-        unsigned long long tmp_previous = previous;
-        previous = current;
-        current = tmp_previous + current;
-        sum += current;
-    }
-
-    return sum % 10;
-}
-
-int fibonacci_sum_faster(unsigned long long n)
-{
-    unsigned long long F[n + 1] = {};
-    F[0] = 0;
-    unsigned long long sum = 0;
-    if (n > 0)
-    {
-        F[1] = 1;
-        sum = 1;
-        for (unsigned long long i = 2; i <= n; i++)
+        c = (a + b) % n;
+        a = b;
+        b = c;
+        if (a == 0 & b == 1)
         {
-            F[i] = (F[i - 1] + F[i - 2]);
-            sum = sum + F[i];
+            return i + 1;
         }
     }
-
-    return sum % 10;
 }
+
+int pisano_sum(int pi)
+{
+    int pisano_sum = 0;
+
+    long long F[pi + 1] = {};
+    F[0] = 0;
+    F[-1] = 1;
+
+    for (long long i = 1; i <= pi; i++)
+    {
+        F[i] = (F[i - 1] + F[i - 2]) % 10;
+        pisano_sum = pisano_sum + F[i];
+    }
+    return pisano_sum % 10;
+}
+
+int fibonacci_sum_faster(long long n)
+{
+    long long pi = get_pisano_period(10);
+    long long number_of_pisano_sums = n / pi;
+    long long number_of_remainder_pisano_sums = n % pi;
+    long long final_sum = pisano_sum(pi) * number_of_pisano_sums;
+
+    long long F[number_of_remainder_pisano_sums + 1] = {};
+    F[0] = 0;
+    F[-1] = 1;
+
+    for (int i = 1; i <= number_of_remainder_pisano_sums; i++)
+    {
+        F[i] = (F[i - 1] + F[i - 2]) % 10;
+        final_sum = final_sum + F[i];
+    }
+    return final_sum % 10;
+}
+
 int main()
 {
-    unsigned long long n = 0;
+    long long n = 0;
     cin >> n;
     cout << fibonacci_sum_faster(n);
     //cout << fibonacci_sum_naive(n);
