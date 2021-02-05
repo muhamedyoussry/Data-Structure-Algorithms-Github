@@ -1,51 +1,102 @@
 #include <iostream>
-#include <vector>
-using std::vector;
+using namespace std;
 
-unsigned long long get_fibonacci_partial_sum_naive(unsigned long long from, unsigned long long to)
+int get_pisano_period(int n)
 {
-    unsigned long long sum = 0;
-
-    unsigned long long current = 0;
-    unsigned long long next = 1;
-
-    for (unsigned long long i = 0; i <= to; ++i)
+    long long a = 0;
+    long long b = 1;
+    long long c = a + b;
+    for (int i = 0; i < 100; i++)
     {
-        if (i >= from)
+        c = (a + b) % n;
+        a = b;
+        b = c;
+        if (a == 0 & b == 1)
         {
-            sum += current;
+            return i + 1;
         }
-
-        unsigned long long new_current = next;
-        next = next + current;
-        current = new_current;
     }
-
-    return sum % 10;
 }
 
-int get_fibonacci_partial_sum_faster(unsigned long long from, unsigned long long to)
+int pisano_sum(int pi)
 {
-    unsigned long long F[to + 1] = {};
-    F[-1] = 1;
+    int pisano_sum = 0;
+
+    long long F[pi + 1] = {};
     F[0] = 0;
-    unsigned long long sum = 0;
+    F[-1] = 1;
 
-    for (unsigned long long i = 1; i <= to; i++)
+    for (long long i = 1; i <= pi; i++)
     {
+        F[i] = (F[i - 1] + F[i - 2]) % 10;
+        pisano_sum = pisano_sum + F[i];
+    }
+    return pisano_sum % 10;
+}
 
-        F[i] = (F[i - 1] + F[i - 2]);
-        if (i >= from)
+int fibonacci_sum_faster(long long to)
+{
+    long long pi = get_pisano_period(10);
+    long long number_of_pisano_sums = to / pi;
+    long long number_of_remainder_pisano_sums = to % pi;
+    long long final_sum = pisano_sum(pi) * number_of_pisano_sums;
+
+    long long F[number_of_remainder_pisano_sums + 1] = {};
+    F[0] = 0;
+    F[-1] = 1;
+
+    for (int i = 1; i <= number_of_remainder_pisano_sums; i++)
+    {
+        F[i] = (F[i - 1] + F[i - 2]) % 10;
+        final_sum = final_sum + F[i];
+    }
+    return final_sum % 10;
+}
+int fibonacci_last_digit(long long n)
+{
+    long long pi = get_pisano_period(10);
+    long long number_of_pisano_sums = n / pi;
+    long long number_of_remainder_pisano_sums = n % pi;
+    long long final_sum = pisano_sum(pi) * number_of_pisano_sums;
+
+    long long F[number_of_remainder_pisano_sums + 1] = {};
+    F[0] = 0;
+    F[-1] = 1;
+
+    for (int i = 1; i <= number_of_remainder_pisano_sums; i++)
+    {
+        F[i] = (F[i - 1] + F[i - 2]) % 10;
+    }
+    return F[n];
+}
+
+int get_fibonacci_partial_sum_faster(long long from, long long to)
+{
+    if (from == to)
+    {
+        return fibonacci_last_digit(from);
+    }
+    else if (from == 0)
+    {
+        return fibonacci_sum_faster(to);
+    }
+    else
+    {
+        long long F[to + 1] = {};
+        F[from - 1] = fibonacci_last_digit(from - 1);
+        F[from] = fibonacci_last_digit(from);
+        int sum = F[from] % 10;
+        for (long long i = from + 1; i <= to; i++)
         {
+            F[i] = (F[i - 1] + F[i - 2]) % 10;
             sum = sum + F[i];
         }
+        return sum % 10;
     }
-
-    return sum % 10;
 }
 int main()
 {
-    unsigned long long from, to;
-    std::cin >> from >> to;
-    std::cout << get_fibonacci_partial_sum_faster(from, to) << '\n';
+    long long from, to;
+    cin >> from >> to;
+    cout << get_fibonacci_partial_sum_faster(from, to) << '\n';
 }
