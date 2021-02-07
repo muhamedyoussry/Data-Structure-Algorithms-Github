@@ -44,7 +44,7 @@ Data Structures and Algorithms Specialization Programming Assignments by Univers
 
 ## Programming Assignment 3
 
-- [**1_money_change**](https://github.com/muhamedyoussry/Data-Structure-Algorithms-Github/tree/master/Programming%20Assignment%202/1_fibonacci_number)
+- [**1_money_change**](https://github.com/muhamedyoussry/Data-Structure-Algorithms-Github/tree/master/Programming%20Assignment%203/1_money_change)
     - level: Beginner
     - implementation: naive solution using variables
 
